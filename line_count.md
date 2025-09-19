@@ -15,8 +15,6 @@ samples to make them smaller, unless doing so improves the application overall.
 
 | *Sample* | *LOC (no comments)* |
 |--------|-------------------|
-| built_redux | 0 |
-| firestore_redux | 0 |
 | scoped_model | 767 |
 | signals | 783 |
 | mobx | 800 |
@@ -29,4 +27,4 @@ samples to make them smaller, unless doing so improves the application overall.
 | mvi | 1232 |
 | redux | 1345 |
 
-Note: This file was generated on Sun Sep  7 20:58:20 UTC 2025 using `scripts/line_counter.sh`.
+Note: This file was generated on Fri Sep 19 15:49:00 UTC 2025 using `scripts/line_counter.sh`.

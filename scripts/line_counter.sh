@@ -41,8 +41,6 @@ samples=(
     "change_notifier_provider:change_notifier_provider"
     "bloc:bloc_flutter blocs"
     "bloc library:bloc_library"
-    "built_redux:built_redux"
-    "firestore_redux:firestore_redux"
     "inherited_widget:inherited_widget"
     "mobx:mobx"
     "mvi:mvi_flutter mvi_base"
