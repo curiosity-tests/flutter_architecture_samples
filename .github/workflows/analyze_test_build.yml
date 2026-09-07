@@ -484,6 +484,13 @@ jobs:
           head -10 lcov.info
 
       - name: Upload coverage to Codecov
+        # secrets.CODECOV_TOKEN does not exist on this fork, and the upload
+        # targets brianegan/flutter_architecture_samples' Codecov project, not
+        # ours. This job had never actually run before (it needs all 16 sample
+        # jobs and `signals` was failing), so the upload is untested here.
+        # Combining coverage above is real work and still runs; only the
+        # outbound upload is allowed to fail.
+        continue-on-error: true
         uses: codecov/codecov-action@v5
         with:
           files: ./lcov.info
