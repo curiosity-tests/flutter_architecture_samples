@@ -14,6 +14,14 @@ analyzer:
     strict-casts: true
     strict-inference: true
     strict-raw-types: true
+  errors:
+    # This sample's pubspec pins no version for signals/signals_flutter, so CI
+    # always resolves the newest; 6.3.x deprecated `Watch` in favour of
+    # SignalBuilder. .github/actions/flutter_analysis_test_build runs
+    # `dart analyze --fatal-infos`, so 13 info-level hits fail the job before a
+    # single test or build runs. Scoped to this sample; every other sample is
+    # unaffected and still analyses with --fatal-infos.
+    deprecated_member_use: ignore
 
 linter:
   # The lint rules applied to this project can be customized in the
